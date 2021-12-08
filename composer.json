@@ -1,0 +1,64 @@
+{
+    "name": "taiwan-sms/twsms",
+    "description": "台灣簡訊 twsms api client",
+    "keywords": [
+        "twsms",
+        "sms",
+        "taiwan",
+        "laravel",
+        "notification"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "recca0120",
+            "email": "recca0120@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.9",
+        "guzzlehttp/psr7": "^1.4",
+        "nesbot/carbon": "^1.22|^v2.0",
+        "php-http/client-implementation": "^1.0",
+        "php-http/discovery": "^1.2",
+        "php-http/httplug": "^1.1|^2.0",
+        "php-http/message": "^1.5"
+    },
+    "require-dev": {
+        "illuminate/support": "^5.1",
+        "illuminate/container": "^5.1",
+        "illuminate/config": "^5.1",
+        "illuminate/notifications": "^5.1",
+        "illuminate/queue": "^5.1",
+        "mockery/mockery": "^1.0",
+        "php-http/guzzle6-adapter": "^1.1|^2.0",
+        "phpunit/phpunit": "~4.8|~5.4|~6.1|^8.5|^9.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "TaiwanSms\\TwSMS\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "TaiwanSms\\TwSMS\\Tests\\": "tests/"
+        }
+    },
+    "suggest": {
+        "illuminate/notifications": "If you need Laravel Notification"
+    },
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "optimize-autoloader": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "extra": {
+        "laravel": {
+            "providers": [
+                "TaiwanSms\\TwSMS\\TwSMSServiceProvider"
+            ]
+        }
+    }
+}
